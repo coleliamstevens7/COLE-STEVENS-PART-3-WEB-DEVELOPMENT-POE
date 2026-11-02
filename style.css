@@ -1,0 +1,607 @@
+/* CSS Reset: removes default browser spacing for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles: font, colours, and background applied site-wide */
+body {
+    font-family: 'Aptos', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+/* Header section: black background, white text, centered content */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header img {
+        margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+/* Responsive images: all page images resize within their container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #e60000;
+    margin-top: 5px;
+}
+
+/* Navigation menu: horizontal layout with red hover accents */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e60000;
+}
+nav a:focus {
+    color: #e60000;
+    outline: 2px solid #e60000;
+}
+
+nav a:active {
+    color: #b30000;
+}
+/* Main content: centered layout with readable width and spacing */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    border-bottom: 3px solid #e60000;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+main ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+/* Footer section: black background, white centered text */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+/* Enquiry form: styled inputs and button matching brand colours */
+form {
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-family: 'Aptos', Arial, sans-serif;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #e60000;
+    outline: none;
+}
+form input[type="submit"] {
+    background-color: #e60000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #b30000;
+}
+form input[type="submit"]:focus {
+    outline: 3px solid #000000;
+}
+
+form input[type="submit"]:active {
+    background-color: #800000;
+}
+/* Layout Structure: Flexbox for values and explore lists */
+.values-list,
+.explore-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin-left: 0;
+}
+
+.values-list li,
+.explore-list li {
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border-left: 4px solid #e60000;
+}
+/* Responsive Design: Large tablet / small desktop breakpoint */
+@media screen and (max-width: 1024px) {
+    main {
+        max-width: 700px;
+    }
+}
+
+/* Responsive Design: Tablet breakpoint */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    header img {
+        max-width: 170px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 0.95rem;
+    }
+
+    .values-list,
+    .explore-list {
+        justify-content: center;
+    }
+}
+
+/* Responsive Design: Mobile breakpoint */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header img {
+        max-width: 120px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    main h2 {
+        font-size: 1.3rem;
+    }
+
+    main p,
+    main li {
+        font-size: 0.9rem;
+    }
+
+    .values-list,
+    .explore-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .values-list li,
+    .explore-list li {
+        text-align: center;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Accordion: expandable sections on the Services page */
+.accordion-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Aptos', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border: none;
+    border-left: 6px solid #e60000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button::after {
+    content: "+";
+    float: right;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: "-";
+}
+
+.accordion-button:hover {
+    background-color: #e60000;
+}
+
+.accordion-button:focus {
+    outline: 3px solid #e60000;
+    outline-offset: 2px;
+}
+
+.accordion-button:active {
+    background-color: #b30000;
+}
+
+.accordion-panel {
+    display: none;
+    padding: 15px 20px;
+    background-color: #f2f2f2;
+    border-left: 6px solid #e60000;
+}
+
+.accordion-panel.open {
+    display: block;
+}
+
+/* Interactive map: responsive map embed on the Contact page */
+.map-container {
+    margin-top: 15px;
+    border: 3px solid #000000;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+/* Smaller map height on mobile screens */
+@media screen and (max-width: 480px) {
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+/* Map link: styled link below the map */
+.map-link {
+    margin-top: 10px;
+}
+
+.map-link a {
+    color: #e60000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.map-link a:hover {
+    text-decoration: underline;
+}
+
+.map-link a:focus {
+    outline: 2px solid #e60000;
+    outline-offset: 2px;
+}
+
+.map-link a:active {
+    color: #b30000;
+}
+
+/* Gallery: responsive grid of pictures on the About page */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #000000;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+    border-color: #e60000;
+    transform: scale(1.03);
+}
+
+.gallery-image:active {
+    transform: scale(0.98);
+}
+
+/* Lightbox: full-screen overlay, hidden until a picture is opened */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 80vh;
+    border: 3px solid #ffffff;
+    border-radius: 6px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #e60000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lightbox-close {
+    top: 20px;
+    right: 20px;
+}
+
+.lightbox-prev {
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-next {
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background-color: #b30000;
+}
+
+.lightbox-close:focus,
+.lightbox-prev:focus,
+.lightbox-next:focus {
+    outline: 3px solid #ffffff;
+}
+
+.lightbox-close:active,
+.lightbox-prev:active,
+.lightbox-next:active {
+    background-color: #800000;
+}
+
+/* Search feature: search box on the Services page */
+main label[for="search-input"] {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#search-input {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-family: 'Aptos', Arial, sans-serif;
+}
+
+#search-input:hover {
+    border-color: #e60000;
+}
+
+#search-input:focus {
+    border-color: #e60000;
+    outline: none;
+}
+
+.search-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e60000;
+}
+
+/* Dynamic content: open or closed message on the Contact page */
+.open-status {
+    padding: 10px 15px;
+    background-color: #f2f2f2;
+    border-left: 6px solid #000000;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.open-status.is-open {
+    border-left-color: #2e9e4f;
+}
+
+.open-status.is-closed {
+    border-left-color: #e60000;
+}
+
+/* Form controls: phone, dropdown and checkbox styling */
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-family: 'Aptos', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+form input[type="tel"]:hover,
+form select:hover,
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form textarea:hover {
+    border-color: #e60000;
+}
+
+form input[type="tel"]:focus,
+form select:focus {
+    border-color: #e60000;
+    outline: none;
+}
+
+.consent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.consent label {
+    display: inline;
+    margin: 0;
+}
+
+.consent input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #e60000;
+}
+
+/* Form validation: error messages and highlighted fields */
+.error-message {
+    display: block;
+    min-height: 1.2rem;
+    margin-top: 4px;
+    color: #e60000;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+form .input-error {
+    border-color: #e60000;
+    background-color: #fff0f0;
+}
+
+.form-message {
+    margin-top: 15px;
+    color: #e60000;
+    font-weight: bold;
+}

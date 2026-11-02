@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COLEFIT Services - Training Programmes and Facilities</title>
+<meta name="description" content="Explore the training programmes and facilities at COLEFIT, with quality equipment and support to help you reach your fitness goals.">
+<meta name="keywords" content="gym services, training programmes, gym facilities, personal training, fitness equipment, COLEFIT">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header section: contains logo image, page title, and main navigation menu -->
+     <header>
+
+        <img src="images/gym-equipment-dumbbells-weights.jpg" alt="Gym equipment including dumbbells and weights at COLEFIT">
+
+        <h1>COLEFIT Services</h1>
+
+        <!-- Navigation menu: links to all 5 pages, repeated on every page for consistency -->
+         <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="memberships.html">Memberships</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <!-- Main content: training programmes, facilities, and fitness support info -->
+     <main>
+
+        <!-- Search feature: type a word to filter the sections below -->
+        <label for="search-input">Search our services:</label>
+        <input type="search" id="search-input" placeholder="Try: equipment, training or support" autocomplete="off">
+        <p id="search-message" class="search-message"></p><!-- Accordion: click a heading to show or hide its section -->
+        <button class="accordion-button" aria-expanded="false" aria-controls="panel-1">Training Programmes</button>
+        <div class="accordion-panel" id="panel-1">
+            <p>
+                COLEFIT provides training programmes to help individuals work
+                towards their health and fitness goals.
+            </p>
+        </div>
+
+        <button class="accordion-button" aria-expanded="false" aria-controls="panel-2">Facilities</button>
+        <div class="accordion-panel" id="panel-2">
+            <p>
+                COLEFIT provides quality gym equipment in a welcoming environment
+                for individuals of all fitness levels.
+            </p>
+        </div>
+
+        <button class="accordion-button" aria-expanded="false" aria-controls="panel-3">Fitness Support</button>
+        <div class="accordion-panel" id="panel-3">
+            <p>
+                COLEFIT supports members throughout their fitness journey and
+                encourages people to stay focused and motivated.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer section: displays site name -->
+     <footer>
+
+        <p>COLEFIT</p>
+
+    </footer>
+
+    <!-- JavaScript file: runs the accordion behaviour -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

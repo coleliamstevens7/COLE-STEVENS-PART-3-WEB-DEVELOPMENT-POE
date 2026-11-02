@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact COLEFIT - Send Us Your Enquiry</title>
+<meta name="description" content="Contact COLEFIT with your questions about memberships and services. Send an enquiry using our contact form and we will get back to you.">
+<meta name="keywords" content="contact COLEFIT, gym enquiry, gym contact, membership enquiry, fitness enquiry">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header section: contains logo image, page title, and main navigation menu -->
+     <header>
+
+        <img src="images/colefit-reception-desk.jpg" alt="Reception desk with chairs at the entrance of the COLEFIT gym">
+
+        <h1>Contact COLEFIT</h1>
+
+        <!-- Navigation menu: links to all 5 pages, repeated on every page for consistency -->
+         <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="memberships.html">Memberships</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <!-- Main content: contact details, location, operating hours, and enquiry form -->
+     <main>
+
+        <h2>Contact COLEFIT</h2>
+
+        <p>
+            If you have any questions about COLEFIT, please contact us for
+            more information.
+        </p>
+
+        <h2>Contact Information</h2>
+
+        <p>Email: info@colefit.co.za</p>
+
+        <p>Phone: 071 123 4567</p>
+
+        <h2>Location</h2>
+
+        <p>Sandton, Johannesburg, South Africa</p>
+        
+        <!-- Interactive map: Google Map embed showing the COLEFIT area in Sandton, Johannesburg -->
+        <div class="map-container">
+            <iframe title="Map showing the COLEFIT location in Sandton, Johannesburg" src="https://maps.google.com/maps?q=-26.1076,28.0567&z=15&output=embed" loading="lazy" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Map link: opens the full Google Maps app, useful on phones where the zoom buttons are hidden -->
+        <p class="map-link"><a href="https://www.google.com/maps/search/?api=1&query=Sandton%2C+Johannesburg%2C+South+Africa" target="_blank" rel="noopener">Open in Google Maps</a></p>
+
+        <h2>Operating Hours</h2>
+        
+        <!-- Dynamic content: JavaScript fills this in with the current open or closed status -->
+        <p id="open-status" class="open-status"></p>
+
+        <ul>
+            <li>Monday - Friday: 06:00 - 20:00</li>
+            <li>Saturday: 07:00 - 17:00</li>
+            <li>Sunday: 08:00 - 14:00</li>
+        </ul>
+
+        <h2>Enquiry Form</h2>
+
+        <!-- Enquiry form: collects the visitor's details. The novalidate attribute lets our own JavaScript show the error messages. -->
+        <form id="enquiry-form" name="enquiry" method="POST" action="https://api.web3forms.com/submit" novalidate>
+
+            <!-- Hidden fields: the Web3Forms access key and the subject line of the email you receive -->
+            <input type="hidden" name="access_key" value="9806a7ce-ab9f-4cf3-945e-8791decd75f4">
+            <input type="hidden" name="subject" value="New COLEFIT website enquiry">
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required>
+            <span class="error-message" id="name-error"></span>
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <span class="error-message" id="email-error"></span>
+
+            <label for="phone">Phone number (optional):</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 071 123 4567" autocomplete="tel">
+            <span class="error-message" id="phone-error"></span>
+
+            <label for="enquiry-type">What is your enquiry about?</label>
+            <select id="enquiry-type" name="enquiry-type" required>
+                <option value="">Please choose...</option>
+                <option value="memberships">Memberships</option>
+                <option value="services">Services and facilities</option>
+                <option value="general">General question</option>
+            </select>
+            <span class="error-message" id="enquiry-type-error"></span>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message here" required></textarea>
+            <span class="error-message" id="message-error"></span>
+
+            <div class="consent">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I agree to be contacted about my enquiry.</label>
+            </div>
+            <span class="error-message" id="consent-error"></span>
+
+            <p class="form-message" id="form-message" role="alert"></p>
+
+            <input type="submit" value="Send Enquiry">
+
+        </form>
+
+    </main>
+
+    <!-- Footer section: displays site name -->
+     <footer>
+
+        <p>COLEFIT</p>
+
+    </footer>
+
+    <!-- JavaScript file: runs the open status message and the form validation -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
