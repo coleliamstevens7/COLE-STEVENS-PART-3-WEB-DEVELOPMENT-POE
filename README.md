@@ -52,6 +52,8 @@ Part 1 focused on building the foundation of the COLEFIT website: setting up the
 - Typography: body text, headings and paragraph sizes now scale down at each breakpoint, not just the header.
 - Navigation menu: links wrap and centre on tablet, and stack vertically on mobile with larger tap areas.
 - Images: the header image now resizes progressively (200px on desktop, 170px on tablet, 120px on mobile).
+## Part 3 Summary
+In Part 3 of my COLEFIT Website Development POE I worked on improving the website. I used JavaScript to make it more interactive, with an accordion and search on the Services page, a gallery lightbox on the About page, and an open/closed status message on the Contact page. I added an interactive map, form validation with error messages, and a confirmation page after an enquiry is sent. I also added SEO (page titles, meta descriptions, keywords and image alt text), deployed the website on Netlify, and made the layout adapt better to laptops, tablets and mobile phones.
 ## References
 Mozilla Developer Network (MDN). (2025). HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/ (Accessed: 4 August 2026).
 
