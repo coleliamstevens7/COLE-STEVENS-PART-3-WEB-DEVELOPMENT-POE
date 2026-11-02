@@ -120,3 +120,11 @@ Netlify. (2026). Netlify Docs. Available at: https://docs.netlify.com/ (Accessed
 - Styled the enquiry form on contact.html.
 - Implemented responsive design using media queries for tablet and mobile screens.
 - Added screenshot evidence of desktop, tablet, and mobile views to the README.
+
+### [Date: 2 November 2026] – Part 3: Additional Requests
+- **robots.txt:** Created `robots.txt` in the root folder. It allows search engines to crawl the site, excludes `thank-you.html` (a confirmation page with no value in search results), and points to the sitemap.
+- **sitemap.xml:** Created `sitemap.xml` listing the five main pages (Home, About Us, Memberships, Services, Contact Us) to help search engines understand the structure of the website.
+- **Page speed:** The embedded Google Map uses `loading="lazy"`, so it only loads when the visitor scrolls to it.
+- **Security:** The live site is served over HTTPS by Netlify, and the external "Open in Google Maps" link uses `rel="noopener"`.
+- **Local SEO:** The COLEFIT location (Sandton, Johannesburg, South Africa) is stated on the Contact page and shown on the embedded map.
+- **Off-page SEO:** Backlinks and social media promotion take place outside the website code, so they are recommended as steps after launch rather than built into the site.
